@@ -1,0 +1,13 @@
+{
+  "name": "kommo-api-widget",
+  "version": "1.0.0",
+  "description": "Widget do Kommo para chamadas HTTP com suporte a variáveis dinâmicas",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
