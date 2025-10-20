@@ -6,17 +6,17 @@
     "version": "1.0.0",
     "author": "Seu Nome ou Empresa",
     "email": "seuemail@dominio.com",
-    "url": "https://thallyson03.github.io/kommo-universal-api-widget/"
+    "url": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/"
   },
   "locations": [
     "lead_card",
     "settings"
   ],
   "installation": {
-    "redirect_url": "https://thallyson03.github.io/kommo-universal-api-widget/install.html",
+    "redirect_url": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/install.html",
     "pages": {
-      "lead_card": "https://thallyson03.github.io/kommo-universal-api-widget/widget/lead.html",
-      "settings": "https://thallyson03.github.io/kommo-universal-api-widget/widget/settings.html"
+      "lead_card": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/widget/lead.html",
+      "settings": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/widget/settings.html"
     }
   },
   "settings": {
