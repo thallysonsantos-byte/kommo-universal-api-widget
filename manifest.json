@@ -1,38 +1,50 @@
 {
   "widget": {
-    "name": "Kommo Universal API Widget",
-    "description": "Widget genérico para chamadas de API externas (N8n, Zapier, etc).",
-    "short_description": "Conecta Kommo a qualquer API.",
-    "version": "1.0.0",
-    "author": "Seu Nome ou Empresa",
-    "email": "seuemail@dominio.com",
-    "url": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/"
-  },
-  "locations": [
-    "lead_card",
-    "settings"
-  ],
-  "installation": {
-    "redirect_url": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/install.html",
-    "pages": {
-      "lead_card": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/widget/lead.html",
-      "settings": "https://thallysonsantos-byte.github.io/kommo-universal-api-widget/widget/settings.html"
+    "name": "API Request Widget",
+    "description": "Widget para o Kommo Salesbot que realiza chamadas HTTP e aceita variáveis dinâmicas.",
+    "version": "1.1.0",
+    "author": "Thallyson Santos",
+    "base_url": "https://kommo-api-widget.onrender.com/",
+    "install_url": "https://kommo-api-widget.onrender.com/install",
+    "icon": "https://kommo-api-widget.onrender.com/assets/icon.png",
+    "locations": ["salesbot_designer"],
+    "support": {
+      "url": "https://seusite.com/suporte"
     }
   },
   "settings": {
-    "fields": [
-      {
-        "name": "api_url",
-        "type": "text",
-        "label": "Endpoint da API",
-        "required": true
-      },
-      {
-        "name": "api_key",
-        "type": "text",
-        "label": "Chave de API (opcional)",
-        "required": false
-      }
-    ]
+    "salesbot_designer": {
+      "title": "API Request Block",
+      "fields": [
+        {
+          "name": "api_url",
+          "type": "text",
+          "label": "URL da API",
+          "required": true
+        },
+        {
+          "name": "method",
+          "type": "select",
+          "label": "Método HTTP",
+          "options": [
+            { "label": "GET", "value": "GET" },
+            { "label": "POST", "value": "POST" },
+            { "label": "PUT", "value": "PUT" },
+            { "label": "DELETE", "value": "DELETE" }
+          ],
+          "default": "GET"
+        },
+        {
+          "name": "body",
+          "type": "text",
+          "label": "Corpo da requisição (JSON com variáveis do bot)",
+          "placeholder": "{\"lead_id\": \"{{lead.id}}\", \"name\": \"{{contact.name}}\"}"
+        }
+      ],
+      "exits": [
+        { "name": "success", "label": "Sucesso" },
+        { "name": "error", "label": "Erro" }
+      ]
+    }
   }
 }
