@@ -1,0 +1,38 @@
+{
+  "widget": {
+    "name": "Kommo Universal API Widget",
+    "description": "Widget genérico para chamadas de API externas (ex: N8n, Zapier, etc).",
+    "short_description": "Conecta Kommo a qualquer API",
+    "version": "1.0.0",
+    "author": "Seu Nome ou Empresa",
+    "email": "seuemail@dominio.com",
+    "url": "https://thallyson03.github.io/kommo-universal-api-widget/"
+  },
+  "locations": [
+    "lead_card",
+    "settings"
+  ],
+  "installation": {
+    "redirect_url": "https://thallyson03.github.io/kommo-universal-api-widget/install.html",
+    "pages": {
+      "lead_card": "https://thallyson03.github.io/kommo-universal-api-widget/widget/lead.html",
+      "settings": "https://thallyson03.github.io/kommo-universal-api-widget/widget/settings.html"
+    }
+  },
+  "settings": {
+    "fields": [
+      {
+        "name": "api_url",
+        "type": "text",
+        "label": "Endpoint da API",
+        "required": true
+      },
+      {
+        "name": "api_key",
+        "type": "text",
+        "label": "Chave de API (opcional)",
+        "required": false
+      }
+    ]
+  }
+}
