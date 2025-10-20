@@ -4,9 +4,9 @@
     "description": "Widget para o Kommo Salesbot que realiza chamadas HTTP e aceita variáveis dinâmicas.",
     "version": "1.1.0",
     "author": "Thallyson Santos",
-    "base_url": "https://kommo-api-widget.onrender.com/",
-    "install_url": "https://kommo-api-widget.onrender.com/install",
-    "icon": "https://kommo-api-widget.onrender.com/assets/icon.png",
+    "base_url": "https://kommo-universal-api-widget.onrender.com/",
+    "install_url": "https://kommo-universal-api-widget.onrender.com/install",
+    "icon": "https://kommo-universal-api-widget.onrender.com/assets/icon.png",
     "locations": ["salesbot_designer"],
     "support": {
       "url": "https://seusite.com/suporte"
