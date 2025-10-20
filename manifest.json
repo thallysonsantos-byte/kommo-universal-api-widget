@@ -1,8 +1,8 @@
 {
   "widget": {
     "name": "Kommo Universal API Widget",
-    "description": "Widget genérico para chamadas de API externas (ex: N8n, Zapier, etc).",
-    "short_description": "Conecta Kommo a qualquer API",
+    "description": "Widget genérico para chamadas de API externas (N8n, Zapier, etc).",
+    "short_description": "Conecta Kommo a qualquer API.",
     "version": "1.0.0",
     "author": "Seu Nome ou Empresa",
     "email": "seuemail@dominio.com",
